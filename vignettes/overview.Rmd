@@ -1,0 +1,30 @@
+---
+title: "Overview of the CourseraRPackageAssignment package"
+author: "Fokke Oosterhoff"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Overview of the CourseraRPackageAssignment package}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+The goal of CourseraRPackageAssignment is to explore the building of R packages and publishing them on GitHub including tests using Travis. This package is part of the Coursera 'Building R packages' course which is part of the 'Mastering Software Development in R' specialization.
+
+The package contains functions to
+* read FARS data and to retrieve the month and year of each accident from a given list of years
+* retrieve the number of accidents per month for each wanted year
+* plot a map of a given state with all accidents that happened in a given year
+
+The package holds data for the year 2013,2014 and 2015. More data can be retrieved from the FARS site.
+
+## Example
+
+To plot the 2015 accidents in the state California (using the standard state codes):
+
+```{r, fig.show='hold'}
+currentpath = setwd('..')
+library(CourseraRPackageAssignment)
+fars_map_state(6, 2015)
+setwd(currentpath)
+```

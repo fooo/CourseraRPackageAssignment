@@ -1,0 +1,17 @@
+Package: CourseraRPackageAssignment
+Type: Package
+Title: The CourseraRPackageAssignment package
+Version: 0.1.0
+Author: Fokke Oosterhoff
+Maintainer: Fokke Oosterhoff <fokke@knewit.nl>
+Depends: R (>= 3.3.0), dplyr, maps, readr, tidyr
+Description: The goal of CourseraRPackageAssignment is to explore the building of R packages and publishing them on GitHub including tests using Travis.
+     This package is part of the Coursera 'Building R packages' course which is part of the 'Mastering Software Development in R' specialization.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Suggests: knitr,
+    rmarkdown,
+    testthat
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
