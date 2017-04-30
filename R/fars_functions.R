@@ -1,3 +1,5 @@
+utils::globalVariables(c("year", "MONTH", "n", "STATE"))
+
 #' Reads data from a CSV file into a data frame tbl
 #'
 #' @param filename (string) Filename of the file to read
